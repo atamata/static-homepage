@@ -1,15 +1,10 @@
-//- NOTES
-    In the event that a gradient is present in the SVG, the icon parameter would currently require a
-    fragment from a view-based sprite, referenced from an img tag if it is to be rendered correctly.
-
-mixin header-1(url, icon, h1, navigation, hook)
+mixin header-1(url, icon, navigation, hook)
     header(class=hook ? "header-1 " + hook :  "header-1")
 
         div
-            h1
-                a(href="https://www.kythera.gr/")
-                    img(src="https://raw.githubusercontent.com/atamata/static-homepage/master/src/images/global/new-logo.jpg")
-                    =h1
+            a(href="https://www.kythera.gr/")
+             img(src="https://raw.githubusercontent.com/atamata/static-homepage/master/src/images/global/new-logo.jpg")
+                    
 
             nav(id="navigation" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement")
 
