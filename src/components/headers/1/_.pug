@@ -7,8 +7,8 @@ mixin header-1(url, icon, h1, navigation, hook)
 
         div
             h1
-                a(href=url)
-                    svg: use(xlink:href="https://www.kythera.gr/images/logo.jpg" + icon)
+                a(href="https://www.kythera.gr/")
+                    svg: use(xlink:href="https://www.kythera.gr/images/logo.jpg")
                     =h1
 
             nav(id="navigation" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement")
